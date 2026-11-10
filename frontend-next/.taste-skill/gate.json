@@ -1,0 +1,229 @@
+{
+ "start": "2026-11-10T17:45:10.533Z",
+ "round": 2,
+ "idle": 0,
+ "errors": 0,
+ "status": "pass",
+ "history": [
+  {
+   "at": "2026-11-10T19:02:26.024Z",
+   "mode": "manual",
+   "status": "fail",
+   "fails": 1,
+   "round": 1,
+   "reused": false,
+   "stopHookActive": false
+  },
+  {
+   "at": "2026-11-10T19:04:51.362Z",
+   "mode": "manual",
+   "status": "fail",
+   "fails": 4,
+   "round": 1,
+   "reused": false,
+   "stopHookActive": false
+  },
+  {
+   "at": "2026-11-10T19:11:10.820Z",
+   "mode": "manual",
+   "status": "fail",
+   "fails": 2,
+   "round": 2,
+   "reused": false,
+   "stopHookActive": false
+  },
+  {
+   "at": "2026-11-10T19:13:43.417Z",
+   "mode": "manual",
+   "status": "pass",
+   "fails": 0,
+   "round": 2,
+   "reused": false,
+   "stopHookActive": false
+  }
+ ],
+ "max": 3,
+ "marker": {
+  "page": null,
+  "url": "http://localhost:3000/",
+  "root": null,
+  "kind": "software",
+  "category": "AI investment research for Indian stocks",
+  "primary": "Analyse a stock",
+  "rounds": 3,
+  "start": "2026-11-10T17:45:10.533Z",
+  "by": "gate.mjs --start"
+ },
+ "manual": true,
+ "roundKey": "bd155e37b7e63f2c:da39a3ee",
+ "roundFree": false,
+ "idleFree": false,
+ "blockKey": null,
+ "fp": "ecf9a45c6c26177d",
+ "page": "http://localhost:3000/",
+ "found": {
+  "fails": [],
+  "warns": [
+   {
+    "check": "cut-text",
+    "where": "div.w-full > div.mt-4 > div.space-y-2.font-mono > p.flex.justify-between:nth-of-type(2) \"HDFC Bank → HDFCBANK\"",
+    "msg": "1 line of its text sit where the box has no visible edge (its fill matches what is behind it there) (inside a held section or scroll scene, whose motion --quick does not check)",
+    "fix": "give the text room: no overflow clipping a line, no line past its box",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "pinned",
+    "where": "main#main > section.section-box:nth-of-type(2) > div.wrap.mo-pc__grid \"How Investment Intelligence makes a call\"",
+    "msg": "held on screen for 1 screen of scroll (position: sticky) while the page moves on (inside a dealt moment's section, [data-moment]: expected on every kind, two moments at most, house rule; its still is judged under reduced motion)",
+    "fix": "let the section scroll with the page",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "same-action",
+    "where": "div.hero-text.grid > div.mo-lt > div.mt-8.flex > a.hidden \"See today’s opportunities\"",
+    "msg": "\"See today’s opportunities\" is a button in one place and a text link in another: one action in two looks (inside a held section or scroll scene, whose motion --quick does not check)",
+    "fix": "show one action one way: the same button wherever it repeats, or a text link everywhere",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "cta",
+    "where": "main#main > section.section-box:nth-of-type(2) \"How Investment Intelligence makes a call\"",
+    "msg": "a section over 1.5 screens long with no link or button in it",
+    "fix": "add the action: a button in the hero, one on every priced item, one in the closing section",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "section-gaps",
+    "where": "main#main > section.section-box:nth-of-type(3) / footer.closing.section-box",
+    "msg": "uneven space at the edge of a band: 254px outside its edge, 111px inside it (the space on either side of a change of ground reads as one gap only when the two match)",
+    "fix": "use one gap between sections (all within 25% of each other)",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "nav-labels",
+    "where": "header.nav.fixed > a.sr-only \"Skip to content\"",
+    "msg": "\"Skip to content\" opens a section headed \"Investment research, ahead of the market.\"",
+    "fix": "name each nav link after the heading of the section it opens",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "font-load",
+    "where": "h1#hero-title \"Geist\"",
+    "msg": "\"Geist\" is asked for by --font-display, --font-text, the h1, the h2s and the body text but never loaded (no font link or @font-face loads it): it shows in its fallback",
+    "fix": "load every family the type asks for: name it in the font link as start.mjs prints it, spelt as Google Fonts spells it, or ask for a family the page loads",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "visual-caption",
+    "where": "div.rounded-sm.border > dl.mt-2.grid > div:nth-of-type(2) > dt.font-mono.uppercase \"PATTERN\"",
+    "msg": "a muted 11px line of 1 row sits 25px under the drawing (svg): it reads as a caption: \"PATTERN\"; no caption or description under any image, render or visual (house rule)",
+    "fix": "take the line away: no caption or description under, over or on any image, render or visual; a licence credit goes in one footer line",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "empty-area",
+    "where": "footer.closing.section-box \"Start with one stock.\"",
+    "msg": "43% of the section is empty: 144px of empty rows between its content, 23% beside content that covers under half the container, in its 720px of rows (WARN over 35%, FAIL over 50%)",
+    "fix": "fill the section: a picture or a second column beside the words, or more of its own content; the section stays one or two screens tall (T-height)",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "share-meta",
+    "where": "head",
+    "msg": "the head lacks theme-color: a shared link shows no picture or title of its own",
+    "fix": "copy the head block of starter.html: og tags, twitter:card, the icon and theme-color (references/system.md, Head)",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "container-edges",
+    "where": "div.wrap.mo-pc__grid > div.mo-pc__text > ol.mo-pc__steps > li.mo-pc__step:nth-of-type(1) \"News inEvery 30 minutes the platform pul\"",
+    "msg": "3 text blocks start on a left line at x 106, 26px from the container's left: text starts on the container's left, or on one split line (x 623, 732, 841) (also \"News sentiment, scoredA rule-bas\", \"Research callRecent sentiment co\") (it is in a scroll scene: told as a WARN) (SR-6)",
+    "fix": "start the text on the container's left, or on the one split line every split shares",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "tap-size",
+    "where": "header.nav.fixed > div.wrap.flex > a.flex.items-center \"AI Investment Intelligence\"",
+    "msg": "a 226x32px tap target: under the 44px a phone needs",
+    "fix": "make every link and control outside running text 44px tall on a phone: display: inline-flex; align-items: center; min-height: 44px (a footer list then needs no gap), a 44px small button, or a transparent ::before laid past the box",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "cut-text",
+    "where": "div:nth-of-type(1) > a.block > div.rounded-sm.border > p.mt-3.line-clamp-3 \"Record Q2 performance with analysts main\"",
+    "msg": "clamped to 3 lines (and 1 more like it: \"Pharma sector is surging\")",
+    "fix": "give the text room: no overflow clipping a line, no line past its box",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "fake-button",
+    "where": "div.w-full > div.mt-4 > div.flex.flex-wrap > span.border.border-accent \"BUY ≥ +0.20\"",
+    "msg": "\"BUY ≥ +0.20\" looks like a button (square, fill #0d7480, outline #0d7480) but is not a link or a button (inside a held section or scroll scene, whose motion --quick does not check)",
+    "fix": "make it a real link or button, or drop its button look",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "fade-cut",
+    "where": "div.rounded-sm.border > div.mt-4 > div.flex.justify-between > span:nth-of-type(2) \"sentiment 0.76\"",
+    "msg": "a line of div.rounded-sm.border fades out under its edge (\"sentiment 0.76\"): drawn at a fraction of #4a565e on #ffffff, half-erased",
+    "fix": "fit the mock's rows inside its panel (fewer rows, a taller panel), or end the fade below the last whole row: no row half-erased",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   }
+  ],
+  "crashed": [],
+  "seconds": {
+   "consistency": 84,
+   "layout": 14
+  }
+ },
+ "open": [],
+ "waived": [],
+ "warnCount": 15,
+ "at": "2026-11-10T19:13:43.423Z"
+}

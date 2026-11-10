@@ -1,0 +1,11 @@
+{
+ "page": null,
+ "url": "http://localhost:3000/",
+ "root": null,
+ "kind": "software",
+ "category": "AI investment research for Indian stocks",
+ "primary": "Analyse a stock",
+ "rounds": 3,
+ "start": "2026-11-10T17:45:10.533Z",
+ "by": "gate.mjs --start"
+}

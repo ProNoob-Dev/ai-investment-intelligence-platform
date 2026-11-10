@@ -1,0 +1,27 @@
+# Secrets — never commit
+.env
+*.env
+
+# Data (runtime state, large)
+backend/vector_wealth_db/
+data/IndianFinancialNews.csv
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+
+# Node / Next.js
+frontend-next/node_modules/
+frontend-next/.next/
+frontend-next/out/
+frontend-next/tsconfig.tsbuildinfo
+frontend-next/.env*.local
+frontend-next/.taste-skill/chrome-profile/
+
+# OS
+.DS_Store

@@ -1,0 +1,25 @@
+{
+ "palettes": [
+  "cool-white-slate"
+ ],
+ "types": [
+  "geist"
+ ],
+ "dealt": [
+  "geist",
+  "gabarito",
+  "schibsted"
+ ],
+ "moments": [
+  {
+   "id": "liquid-type",
+   "at": "2026-11-10T17:45:27.511Z",
+   "seed": "9f8bb59e"
+  },
+  {
+   "id": "pinned-chapters",
+   "at": "2026-11-10T17:45:27.511Z",
+   "seed": "9f8bb59e"
+  }
+ ]
+}

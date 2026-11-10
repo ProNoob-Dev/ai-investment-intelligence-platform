@@ -1,0 +1,27 @@
+services:
+  api:
+    build: .
+    ports:
+      - "8000:10000"
+    env_file:
+      - .env
+    environment:
+      VECTOR_WEALTH_DB_PATH: /app/vector_wealth_db
+    volumes:
+      - api-data:/app/vector_wealth_db
+    restart: unless-stopped
+
+  web:
+    build:
+      context: ./frontend-next
+      dockerfile: Dockerfile
+    ports:
+      - "3000:80"
+    environment:
+      NEXT_PUBLIC_API_URL: http://localhost:8000
+    depends_on:
+      - api
+    restart: unless-stopped
+
+volumes:
+  api-data:
